@@ -1,0 +1,27 @@
+{
+  "name": "pom-framework-utils",
+  "version": "0.0.0",
+  "description": "Provides utility functions to the Pomegranate framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test tap -R spec --cov test/unit/*.js test/integration/**/*.js",
+    "test:report": "NODE_ENV=test tap -R spec --cov --coverage-report=lcov test/unit/*.js test/integration/**/*.js",
+    "test:file": "NODE_ENV=test tap -R spec --cov"
+  },
+  "keywords": [
+    "Pomegranate",
+    "structural"
+  ],
+  "author": "Jim Bulkowski <jim.b@paperelectron.com> (http://paperelectron.com)",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "chalk": "^1.1.3",
+    "debug": "^2.6.2",
+    "fs-extra": "^2.1.2",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "tap": "^10.3.0"
+  }
+}
