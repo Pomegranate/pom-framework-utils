@@ -11,8 +11,13 @@
  *
  * @module index
  */
+
+// Re-export external modules to control downstream dependencies.
+exports.bluebird =require('bluebird')
+exports.debug = require('debug')
 exports.lodash = require('lodash')
 exports.fsExtra = require('fs-extra')
+
 exports.frameworkErrors = require('./lib/frameworkErrors')
 exports.frameworkMessages = require('./lib/frameworkMessages')
 exports.frameworkOptionValidator = require('./lib/frameworkOptionValidator')
