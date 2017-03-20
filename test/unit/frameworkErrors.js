@@ -81,8 +81,8 @@ function equalValue(t, e, thing, equals){
   return t.equal(e[thing], equals, `${thing} => ${equals}`)
 }
 
-function throwError(e, ...args){
+function throwError(e){
   return function(){
-    throw new e(...args)
+    throw new e()
   }
 }
